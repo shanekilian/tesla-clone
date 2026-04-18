@@ -5,17 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Electric Cars, Solar & Clean Energy | Tesla</title>
   </head>
+
   <body>
-    <section>
+    <header>
       <div class="site-header">
         <img src="./assets/tesla-logo.svg" alt="tesla-logo" />
-        <ol>
-          <li>Vehicles</li>
-          <li>Energy</li>
-          <li>Charging</li>
-          <li>Discover</li>
-          <li>Shop</li>
-        </ol>
+        <nav>
+          <ul>
+            <li>Vehicles</li>
+            <li>Energy</li>
+            <li>Charging</li>
+            <li>Discover</li>
+            <li>Shop</li>
+          </ul>
+        </nav>
         <button>
           <img src="./assets/help-img.svg" alt="Help" height="24" width="24" />
         </button>
@@ -36,360 +39,350 @@
           />
         </button>
       </div>
-    </section>
-    <section>
-      <div>
-        <video autoplay muted loop playsinline class="background-video">
-          <source
-            src="https://digitalassets.tesla.com/tesla-contents/video/upload/f_auto,q_auto:best/Homepage-Promo-Carousel-FSD-Supervised-Desktop.mp4"
-            type="video/mp4"
+    </header>
+
+    <main>
+      <section>
+        <div>
+          <video autoplay muted loop playsinline class="background-video">
+            <source
+              src="https://digitalassets.tesla.com/tesla-contents/video/upload/f_auto,q_auto:best/Homepage-Promo-Carousel-FSD-Supervised-Desktop.mp4"
+              type="video/mp4"
+            />
+          </video>
+        </div>
+        <div>
+          <h1>Full Self-Driving (Supervised)</h1>
+          <h4>Available for $99/mo</h4>
+          <button>Order Now</button>
+          <button>View Inventory</button>
+        </div>
+      </section>
+
+      <section class="slider-container">
+        <div class="slider-nav">
+          <a href="#item-1"></a>
+          <a href="#item-2"></a>
+          <a href="#item-3"></a>
+          <a href="#item-4"></a>
+          <a href="#item-5"></a>
+        </div>
+        <div class="slider">
+          <div class="product-item" id="item-1">
+            <div class="item-media">
+              <img
+                src="https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Card-Model-3-Desktop-US_PR_MX.jpg"
+                alt="Model 3"
+              />
+            </div>
+            <div class="item-info">
+              <h5>Sport Sedan</h5>
+              <h1>Model 3</h1>
+              <a href="https://www.tesla.com/model3/design"
+                >Lease From $299/mo</a
+              >
+            </div>
+            <div class="item-buttons">
+              <button>Order Now</button>
+              <button>Learn More</button>
+            </div>
+          </div>
+          <div class="product-item" id="item-2">
+            <div class="item-media">
+              <img
+                src="https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Vehicle-Card-Model-Y-Desktop-US-Snow.jpg"
+                alt="Model Y"
+              />
+            </div>
+            <div class="item-info">
+              <h5>Midsize SUV</h5>
+              <h1>Model Y</h1>
+              <a href="https://www.tesla.com/modely/design"
+                >Lease From $459/mo</a
+              >
+            </div>
+            <div class="item-buttons">
+              <button>Order Now</button>
+              <button>Learn More</button>
+            </div>
+          </div>
+          <div class="product-item" id="item-3">
+            <div class="item-media">
+              <img
+                src="https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Card-Cybertruck-Desktop-US_PR_MX.jpg"
+                alt="Cybertruck"
+              />
+            </div>
+            <div class="item-info">
+              <h5>Utility Truck</h5>
+              <h1>Cybertruck</h1>
+              <a href="https://www.tesla.com/cybertruck/design"
+                >Lease From $849/mo</a
+              >
+            </div>
+            <div class="item-buttons">
+              <button>Order Now</button>
+              <button>Learn More</button>
+            </div>
+          </div>
+          <div class="product-item" id="item-4">
+            <div class="item-media">
+              <img
+                src="https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Card-Model-S-Desktop-US-v3.jpg"
+                alt="Model S"
+              />
+            </div>
+            <div class="item-info">
+              <h5>Luxury Sedan</h5>
+              <h1>Model S</h1>
+            </div>
+            <div class="item-buttons">
+              <button>Order Now</button>
+              <button>Learn More</button>
+            </div>
+          </div>
+          <div class="product-item" id="item-5">
+            <div class="item-media">
+              <img
+                src="https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Card-Model-X-Desktop-US_PR_MX.jpg"
+                alt="Model X"
+              />
+            </div>
+            <div class="item-info">
+              <h5>Luxury SUV</h5>
+              <h1>Model X</h1>
+            </div>
+            <div class="item-buttons">
+              <button>Order Now</button>
+              <button>Learn More</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="tesla-layout-grid">
+        <section class="layout-columb main-content">
+          <div class="card-wrapper">
+            <picture class="card-background">
+              <img
+                src="https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-FSD-Safety-Report-Split-Desktop.jpg"
+                alt="FSD City Street"
+              />
+            </picture>
+            <div class="card-text-overlay">
+              <h1>Travel safet, Arrive refreshed</h1>
+              <h4>Full Self-Driving (Supervised)</h4>
+              <div class="button-group">
+                <a href="https://www.tesla.com/drive" class="btn-primary"
+                  >Demo FSD</a
+                >
+                <a href="https://www.tesla.com/fsd/safety" class="btn-secondary"
+                  >Learn More</a
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="layout-column aside-content">
+          <div class="card-wrapper">
+            <picture class="card-background">
+              <img
+                src="https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Features-Desktop.png"
+                alt="Features"
+              />
+            </picture>
+            <div class="card-text-overlay">
+              <h1>Features That Come Standard</h1>
+              <div class="button-group">
+                <a href="https://www.tesla.com/features" class="btn-primary"
+                  >Discover</a
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <section class="charging-section">
+        <div class="map-preview">
+          <img
+            src="./assets/map-view-of-super-charger.png"
+            alt="Tesla Charging Network Map"
           />
-        </video>
-      </div>
-
-      <div>
-        <h1>Full Self-Driving (Supervised)</h1>
-        <h4>Available for $99/mo</h4>
-        <button>Order Now</button>
-        <button>View Inventory</button>
-      </div>
-    </section>
-
-    <section class="slider-container">
-      <div class="slider-nav">
-        <a href="#item-1"></a>
-        <a href="#item-2"></a>
-        <a href="#item-3"></a>
-        <a href="#item-4"></a>
-        <a href="#item-5"></a>
-      </div>
-
-      <div class="slider">
-        <div class="product-item" id="item-1">
-          <div class="item-media">
-            <img
-              src="https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Card-Model-3-Desktop-US_PR_MX.jpg"
-              alt="Model 3"
-            />
+        </div>
+        <div class="charging-content">
+          <header class="charging-header">
+            <h2 class="charging-title">Find Your Charge</h2>
+            <p class="charging-subtitle">
+              View the network of Tesla Superchargers available near you.
+            </p>
+          </header>
+          <div class="charger-legend">
+            <div class="legend-item">
+              <div class="stat-box">
+                <span class="count-number">31,839</span>
+                <img
+                  src="./assets/charge-logo1.svg"
+                  alt="Supercharger Icon"
+                  class="icon-small"
+                />
+              </div>
+              <h4 class="legend-label">Superchargers</h4>
+            </div>
+            <div class="legend-item">
+              <div class="stat-box">
+                <span class="count-number">5,900</span>
+                <img
+                  src="./assets/destination-charging.svg"
+                  alt="Destination Icon"
+                  class="icon-small"
+                />
+              </div>
+              <h4 class="legend-label">Destination Chargers</h4>
+            </div>
           </div>
-          <div class="item-info">
-            <h5>Sport Sedan</h5>
-            <h1>Model 3</h1>
-            <a href="https://www.tesla.com/model3/design">Lease From $299/mo</a>
-          </div>
-          <div class="item-buttons">
-            <button>Order Now</button>
-            <button>Learn More</button>
+          <div class="charging-actions">
+            <button class="btn-main">View Network</button>
+            <button class="btn-outline">Learn More</button>
           </div>
         </div>
+      </section>
 
-        <div class="product-item" id="item-2">
-          <div class="item-media">
-            <img
-              src="https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Vehicle-Card-Model-Y-Desktop-US-Snow.jpg"
-              alt="Model Y"
-            />
-          </div>
-          <div class="item-info">
-            <h5>Midsize SUV</h5>
-            <h1>Model Y</h1>
-            <a href="https://www.tesla.com/modely/design">Lease From $459/mo</a>
-          </div>
-          <div class="item-buttons">
-            <button>Order Now</button>
-            <button>Learn More</button>
-          </div>
+      <section class="energy-carousel-container">
+        <div class="carousel-dots">
+          <a href="#energy-1" class="dot-link"></a>
+          <a href="#energy-2" class="dot-link"></a>
+          <a href="#energy-3" class="dot-link"></a>
+          <a href="#energy-4" class="dot-link"></a>
         </div>
-
-        <div class="product-item" id="item-3">
-          <div class="item-media">
-            <img
-              src="https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Card-Cybertruck-Desktop-US_PR_MX.jpg"
-              alt="Cybertruck"
-            />
+        <div class="energy-slider">
+          <div class="energy-slide" id="energy-1">
+            <div class="slide-media">
+              <img
+                src="https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Card-Solar-Panels-Desktop-v2.jpg"
+                alt="Solar Panels"
+              />
+            </div>
+            <div class="slide-overlay">
+              <h1>Solar Panels</h1>
+              <h4>Power Your Home and Reduce Your Electricity Bill</h4>
+              <div class="slide-actions">
+                <button class="btn-dark">Order Now</button>
+                <button class="btn-light">Learn More</button>
+              </div>
+            </div>
           </div>
-          <div class="item-info">
-            <h5>Utility Truck</h5>
-            <h1>Cybertruck</h1>
-            <a href="https://www.tesla.com/cybertruck/design"
-              >Lease From $849/mo</a
-            >
+          <div class="energy-slide" id="energy-2">
+            <div class="slide-media">
+              <img
+                src="https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Card-Powerwall-Desktop.png"
+                alt="Powerwall"
+              />
+            </div>
+            <div class="slide-overlay">
+              <h1>Powerwall</h1>
+              <h4>Keep Your Lights On During Outages</h4>
+              <div class="slide-actions">
+                <button class="btn-dark">Order Now</button>
+                <button class="btn-light">Learn More</button>
+              </div>
+            </div>
           </div>
-          <div class="item-buttons">
-            <button>Order Now</button>
-            <button>Learn More</button>
+          <div class="energy-slide" id="energy-3">
+            <div class="slide-media">
+              <img
+                src="https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Card-Megapack-Desktop-v2.jpg"
+                alt="Megapack"
+              />
+            </div>
+            <div class="slide-overlay">
+              <h1>Megapack</h1>
+              <h4>Massive Batteries for Massive Energy Support</h4>
+              <div class="slide-actions">
+                <button class="btn-light">Learn More</button>
+              </div>
+            </div>
           </div>
-        </div>
-
-        <div class="product-item" id="item-4">
-          <div class="item-media">
-            <img
-              src="https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Card-Model-S-Desktop-US-v3.jpg"
-              alt="Model S"
-            />
-          </div>
-          <div class="item-info">
-            <h5>Luxury Sedan</h5>
-            <h1>Model S</h1>
-          </div>
-          <div class="item-buttons">
-            <button>Order Now</button>
-            <button>Learn More</button>
-          </div>
-        </div>
-
-        <div class="product-item" id="item-5">
-          <div class="item-media">
-            <img
-              src="https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Card-Model-X-Desktop-US_PR_MX.jpg"
-              alt="Model X"
-            />
-          </div>
-          <div class="item-info">
-            <h5>Luxury SUV</h5>
-            <h1>Model X</h1>
-          </div>
-          <div class="item-buttons">
-            <button>Order Now</button>
-            <button>Learn More</button>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="tesla-layout-grid">
-      <section class="layout-columb main-content">
-        <div class="card-wrapper">
-          <picture class="card-background">
-            <img
-              src="https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-FSD-Safety-Report-Split-Desktop.jpg"
-              alt="FSD City Street"
-            />
-          </picture>
-          <div class="card-text-overlay">
-            <h1>Travel safet, Arrive refreshed</h1>
-            <h4>Full Self-Driving (Supervised)</h4>
-            <div class="button-group">
-              <a href="https://www.tesla.com/drive" class="btn-primary"
-                >Demo FSD</a
-              >
-              <a href="https://www.tesla.com/fsd/safety" class="btn-secondary"
-                >Learn More</a
-              >
+          <div class="energy-slide" id="energy-4">
+            <div class="slide-media">
+              <img
+                src="https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Card-Solar-Roof-Desktop-v2.jpg"
+                alt="Solar Roof"
+              />
+            </div>
+            <div class="slide-overlay">
+              <h1>Solar Roof</h1>
+              <h4>Generate Clean Energy With Your Roof</h4>
+              <div class="slide-actions">
+                <button class="btn-dark">Order Now</button>
+                <button class="btn-light">Learn More</button>
+              </div>
             </div>
           </div>
         </div>
       </section>
-      <section class="layout-column aside-content">
-        <div class="card-wrapper">
-          <picture class="card-background">
-            <img
-              src="https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Features-Desktop.png"
-              alt="Features"
-            />
-          </picture>
-          <div class="card-text-overlay">
-            <h1>Features That Come Standard</h1>
-            <div class="button-group">
-              <a href="https://www.tesla.com/features" class="btn-primary"
-                >Discover</a
-              >
-            </div>
-          </div>
-        </div>
-      </section>
-    </section>
+    </main>
 
-    <section class="charging-section">
-      <div class="map-preview">
-        <!-- This is a feture that will be diplayed through javascript but have attached an image as referance -->
-        <img
-          src="./assets/map-view-of-super-charger.png"
-          alt="Tesla Charging Network Map"
-        />
-      </div>
-
-      <div class="charging-content">
-        <header class="charging-header">
-          <h2 class="charging-title">Find Your Charge</h2>
-          <p class="charging-subtitle">
-            View the network of Tesla Superchargers and Destination Chargers
-            available near you.
-          </p>
-        </header>
-
-        <div class="charger-legend">
-          <div class="legend-item">
-            <div class="stat-box">
-              <span class="count-number">31,839</span>
-              <img
-                src="./assets/charge-logo1.svg"
-                alt="Supercharger Icon"
-                class="icon-small"
-              />
-            </div>
-            <h4 class="legend-label">Superxchargers</h4>
-          </div>
-
-          <div class="legend-item">
-            <div class="stat-box">
-              <span class="count-number">5,900</span>
-              <img
-                src="./assets/destination-charging.svg"
-                alt="Destination Icon"
-                class="icon-small"
-              />
-            </div>
-            <h4 class="legend-label">Destination Chargers</h4>
-          </div>
-        </div>
-
-        <div class="charging-actions">
-          <button class="btn-main">View Network</button>
-          <button class="btn-outline">Learn More</button>
-        </div>
-      </div>
-    </section>
-
-    <section class="energy-carousel-container">
-      <div class="carousel-dots">
-        <a href="#energy-1" class="dot-link"></a>
-        <a href="#energy-2" class="dot-link"></a>
-        <a href="#energy-3" class="dot-link"></a>
-        <a href="#energy-4" class="dot-link"></a>
-      </div>
-
-      <div class="energy-slider">
-        <div class="energy-slide" id="energy-1">
-          <div class="slide-media">
-            <img
-              src="https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Card-Solar-Panels-Desktop-v2.jpg"
-              alt="Solar Panels"
-            />
-          </div>
-          <div class="slide-overlay">
-            <h1>Solar Panels</h1>
-            <h4>Power Your Home and Reduce Your Electricity Bill</h4>
-            <div class="slide-actions">
-              <button class="btn-dark">Order Now</button>
-              <button class="btn-light">Learn More</button>
-            </div>
-          </div>
-        </div>
-
-        <div class="energy-slide" id="energy-2">
-          <div class="slide-media">
-            <img
-              src="https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Card-Powerwall-Desktop.png"
-              alt="Powerwall"
-            />
-          </div>
-          <div class="slide-overlay">
-            <h1>Powerwall</h1>
-            <h4>Keep Your Lights On During Outages</h4>
-            <div class="slide-actions">
-              <button class="btn-dark">Order Now</button>
-              <button class="btn-light">Learn More</button>
-            </div>
-          </div>
-        </div>
-
-        <div class="energy-slide" id="energy-3">
-          <div class="slide-media">
-            <img
-              src="https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Card-Megapack-Desktop-v2.jpg"
-              alt="Megapack"
-            />
-          </div>
-          <div class="slide-overlay">
-            <h1>Megapack</h1>
-            <h4>Massive Batteries for Massive Energy Support</h4>
-            <div class="slide-actions">
-              <button class="btn-light">Learn More</button>
-            </div>
-          </div>
-        </div>
-
-        <div class="energy-slide" id="energy-4">
-          <div class="slide-media">
-            <img
-              src="https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Card-Solar-Roof-Desktop-v2.jpg"
-              alt="Solar Roof"
-            />
-          </div>
-          <div class="slide-overlay">
-            <h1>Solar Roof</h1>
-            <h4>Generate Clean Energy With Your Roof</h4>
-            <div class="slide-actions">
-              <button class="btn-dark">Order Now</button>
-              <button class="btn-light">Learn More</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <div>
+    <footer>
+      <section class="footer-disclaimer">
         <p>
           1 Price reflects monthly subscription, subject to terms and
-          conditions. Price and feature availability subject to change.
+          conditions.
         </p>
+      </section>
+
+      <div class="site-footer-nav">
+        <nav class="footer-navigation">
+          <h2 class="sr-only">Footer Links</h2>
+          <ul class="footer-link-list">
+            <li class="footer-link-item">
+              <a href="https://www.tesla.com/about">Tesla © 2026</a>
+            </li>
+            <li class="footer-link-item">
+              <a href="https://www.tesla.com/legal">Privacy & Legal</a>
+            </li>
+            <li class="footer-link-item">
+              <a href="https://service.tesla.com/en-US/vin-recall-search"
+                >Vehicle Recalls</a
+              >
+            </li>
+            <li class="footer-link-item hide-mobile">
+              <a href="https://www.tesla.com/contact">Contact</a>
+            </li>
+            <li class="footer-link-item">
+              <a href="https://www.tesla.com/blog">News</a>
+            </li>
+            <li class="footer-link-item hide-mobile">
+              <a href="https://www.tesla.com/updates">Get Updates</a>
+            </li>
+            <li class="footer-link-item hide-mobile">
+              <a href="https://www.tesla.com/findus/list">Locations</a>
+            </li>
+            <li class="footer-link-item">
+              <a href="https://www.tesla.com/learn">Learn</a>
+            </li>
+          </ul>
+        </nav>
       </div>
-    </section>
 
-    <footer class="site-footer">
-      <nav class="footer-navigation">
-        <h2 class="sr-only">Footer Links</h2>
-        <ul class="footer-link-list">
-          <li class="footer-link-list">
-            <a href="https://www.tesla.com/about">Tesla © 2026</a>
-          </li>
-
-          <li class="footer-link-item">
-            <a href="https://www.tesla.com/legal">Privacy & Legal</a>
-          </li>
-          <li class="footer-link-item">
-            <a href="https://service.tesla.com/en-US/vin-recall-search"
-              >Vehicle Recalls</a
-            >
-          </li>
-          <li class="footer-link-item hide-mobile">
-            <a href="https://www.tesla.com/contact">Contact</a>
-          </li>
-
-          <li class="footer-link-item">
-            <a href="https://www.tesla.com/blog">News</a>
-          </li>
-
-          <li class="footer-link-item hide-mobile">
-            <a href="https://www.tesla.com/updates">Get Updates</a>
-          </li>
-
-          <li class="footer-link-item hide-mobile">
-            <a href="https://www.tesla.com/findus/list">Locations</a>
-          </li>
-
-          <li class="footer-link-item">
-            <a href="https://www.tesla.com/learn">Learn</a>
-          </li>
-        </ul>
-      </nav>
-    </footer>
-
-    <footer class="sticky-footer">
-      <div class="chat-box">
-        <button class="chat-toggle" type="button">
-          <img src="./assets/chat-box-icon.svg" alt="Chat" class="chat-icon" />
-          <span class="chat-lable">Ask a Question</span>
-          <input
-            type="text"
-            placeholder="Compare Model 3 & Model Y"
-            class="chat-input"
-          />
-        </button>
+      <div class="sticky-footer">
+        <div class="chat-box">
+          <button class="chat-toggle" type="button">
+            <img
+              src="./assets/chat-box-icon.svg"
+              alt="Chat"
+              class="chat-icon"
+            />
+            <span class="chat-lable">Ask a Question</span>
+            <input
+              type="text"
+              placeholder="Compare Model 3 & Model Y"
+              class="chat-input"
+            />
+          </button>
+        </div>
+        <button class="arrange-button">Schedule a Driver Today</button>
       </div>
-      <button class="arrange button">Schedule a Driver Today</button>
     </footer>
   </body>
 </html>

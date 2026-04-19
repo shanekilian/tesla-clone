@@ -5,7 +5,7 @@
 }
 
 @font-face {
-  font-family: "Universal Sans";
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   src: url("https://digitalassets.tesla.com/tesla-design-system/raw/upload/static/fonts/universal-sans-2/web/text/Universal-Sans-Text-Bold.woff2")
     format("woff2");
   font-weight: 700;
@@ -14,4 +14,83 @@
 
 body {
   font-family: "Universal Sans", Arial, sans-serif;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  background-color: rgb(255, 255, 255);
+}
+
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 56px;
+  width: 100%;
+  padding: 0 32px;
+}
+
+.header-left,
+.header-right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.header-right {
+  justify-content: flex-end;
+}
+
+.header-center {
+  flex: 0 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.tesla-logo {
+  height: 24px;
+  width: auto;
+  cursor: pointer;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.nav-list li {
+  padding: 4px 16px;
+  font-size: 14px;
+  font-weight: 570;
+  color: black;
+  cursor: pointer;
+  border-radius: 4px;
+  white-space: nowrap;
+}
+
+.nav-list li:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.site-header button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px 8px;
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+}
+
+.site-header button:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.tesla-logo {
+  height: 24px;
+  width: 120px;
 }

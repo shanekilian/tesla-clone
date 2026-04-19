@@ -10,9 +10,16 @@
   <body>
     <header>
       <div class="site-header">
-        <img src="./assets/tesla-logo.svg" alt="tesla-logo" />
-        <nav>
-          <ul>
+        <div class="header-left">
+          <img
+            class="tesla-logo"
+            src="./assets/tesla-logo.svg"
+            alt="Tesla Logo"
+          />
+        </div>
+
+        <nav class="header-center">
+          <ul class="nav-list">
             <li>Vehicles</li>
             <li>Energy</li>
             <li>Charging</li>
@@ -20,25 +27,36 @@
             <li>Shop</li>
           </ul>
         </nav>
-        <button>
-          <img src="./assets/help-img.svg" alt="Help" height="24" width="24" />
-        </button>
-        <button>
-          <img
-            src="./assets/region-language-img.svg"
-            alt="Language & Region"
-            height="24"
-            width="24"
-          />
-        </button>
-        <button>
-          <img
-            src="./assets/account-img.svg"
-            alt="Account"
-            height="24"
-            width="24"
-          />
-        </button>
+
+        <div class="header-right">
+          <a href="https://www.tesla.com/support"
+            ><button>
+              <img
+                src="./assets/help-img.svg"
+                alt="Help"
+                height="24"
+                width="24"
+              /></button
+          ></a>
+          <button>
+            <img
+              src="./assets/region-language-img.svg"
+              alt="Language"
+              height="24"
+              width="24"
+            />
+          </button>
+          <a
+            href="https://auth.tesla.com/oauth2/v1/authorize?redirect_uri=https%3A%2F%2Fwww.tesla.com%2Fteslaaccount%2Fowner-xp%2Fauth%2Fcallback&response_type=code&client_id=ownership&scope=offline_access%20openid%20ou_code%20email%20phone&audience=https%3A%2F%2Fownership.tesla.com%2F&locale=en-US"
+            ><button>
+              <img
+                src="./assets/account-img.svg"
+                alt="Account"
+                height="24"
+                width="24"
+              /></button
+          ></a>
+        </div>
       </div>
     </header>
 

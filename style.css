@@ -1,12 +1,9 @@
-/* UNIVERSAL SELECTOR */
-
-* {
+!!!!!----UNIVERSAL SELECTOR START----!!!!! * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
-@font-face {
+!!!!!----FONT STYLES----!!!!! @font-face {
   font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   src: url("https://digitalassets.tesla.com/tesla-design-system/raw/upload/static/fonts/universal-sans-2/web/text/Universal-Sans-Text-Bold.woff2")
     format("woff2");
@@ -17,8 +14,7 @@
 body {
   font-family: "Universal Sans", Arial, sans-serif;
 }
-/* STICKY NAVBAR SECTION */
-header {
+!!!!!----STICK TOP NAVBAR----!!!!! header {
   position: sticky;
   top: 0;
   width: 100%;
@@ -96,8 +92,7 @@ header {
   height: 24px;
   width: 120px;
 }
-/* HERO SECTION  */
-.hero-section {
+!!!!!----HORIZONTAL SLIDER SECTION----!!!!! .hero-section {
   position: relative;
   height: 475px;
   width: 100%;
@@ -133,9 +128,7 @@ header {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  /* Tesla's specific top padding (48px) and side padding (32px) */
   padding: 48px 32px 32px 32px;
-  /* This ensures the content starts at the top of the container */
   justify-content: flex-start;
   height: 100%;
 }
@@ -150,8 +143,8 @@ header {
 
 .headings h4 {
   font-size: 20px;
-  font-weight: 400; /* They use 'tds-text--regular' */
-  margin-top: 4px; /* Their exact margin-block-start: 4px */
+  font-weight: 400;
+  margin-top: 4px;
   margin-bottom: 0;
   color: rgb(255, 255, 255);
 }
@@ -160,29 +153,25 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  column-gap: 8px; /* Their exact gap */
-  width: 408px; /* Their exact width for the whole group */
+  column-gap: 8px;
+  width: 408px;
   margin-top: 24px;
   box-sizing: border-box;
 }
 
 .button-group button {
-  /* Dimensions */
   width: 200px;
   height: 40px;
   min-height: 40px;
 
-  /* Layout inside the button */
   display: flex;
   align-items: center;
   justify-content: center;
 
-  /* Border & Shape */
   border-radius: 4px;
-  border: 3px solid rgba(0, 0, 0, 0); /* Their 3px transparent border */
-  box-sizing: border-box; /* CRITICAL: keeps border inside the 200px width */
+  border: 3px solid rgba(0, 0, 0, 0);
+  box-sizing: border-box;
 
-  /* Text */
   font-size: 14px;
   font-weight: 500;
   cursor: pointer;
@@ -197,17 +186,14 @@ header {
 
 .btn-secondary {
   background-color: rgb(255, 255, 255);
-  color: rgb(57, 60, 65); /* Their specific dark grey, not pure black */
+  color: rgb(57, 60, 65);
 }
 
 .hero-section button:hover {
   opacity: 0.8;
 }
-/* HERO SECTION EDN */
 
-/* SECTION SLIDER-CONTAINER */
-
-.slider-container {
+!!!!!----HORIZONATL CARD SLIDER----!!!!! .slider-container {
   padding: 40px 24px;
   width: 100%;
   display: flex;
@@ -216,11 +202,10 @@ header {
 
 .hero-container {
   display: grid;
-  /* They use 3 rows: Top (1), Middle (Empty/2), Bottom (3) */
   grid-template-rows: auto 1fr auto;
 
   width: 100%;
-  max-width: 983px; /* Their exact max-width from your code */
+  max-width: 983px;
   height: 580px;
   margin: 0 auto;
 
@@ -233,15 +218,13 @@ header {
   box-sizing: border-box;
 }
 
-/* Row 1: Top Padding */
 .title-container {
-  padding: 32px 40px; /* Exact padding from your code */
+  padding: 32px 40px;
 }
 
-/* Row 2 & 3: Bottom Grouping */
 .content-box {
-  padding: 40px; /* Exact padding from your code */
-  align-self: end; /* Ensures it sticks to the bottom */
+  padding: 40px;
+  align-self: end;
   text-align: left;
 }
 
@@ -253,7 +236,7 @@ header {
 }
 
 .title h1 {
-  font-size: 48px; /* Their exact font size: tcl-text--f48l56 */
+  font-size: 48px;
   font-weight: 600;
   margin: 0;
   width: 171.42;
@@ -272,7 +255,7 @@ header {
 }
 
 .btn {
-  width: 160px; /* Exact width from your code */
+  width: 160px;
   padding: 12px;
   border-radius: 4px;
   font-size: 14px;
@@ -291,9 +274,6 @@ header {
   color: #171a20;
 }
 
-/* --- SLIDER SYSTEM --- */
-
-/* 1. Make the window the right size */
 .slider-outer-wrapper {
   position: relative;
   width: 100%;
@@ -301,20 +281,17 @@ header {
   overflow: hidden;
 }
 
-/* 2. Hide the radio buttons (the switches) */
 input[name="tesla-slider"] {
   display: none;
 }
 
-/* 3. Make the long strip of slides */
 .slides-wrapper {
   display: flex;
-  width: 300%; /* 3 slides = 300% */
+  width: 300%;
   height: 100%;
   transition: transform 0.6s ease-in-out;
 }
 
-/* 4. Style each individual slide */
 .slide {
   width: 33.3333%;
   height: 100%;
@@ -325,7 +302,6 @@ input[name="tesla-slider"] {
   justify-content: center;
 }
 
-/* 5. The Logic: When a button is checked, move the strip */
 #slide-1:checked ~ .slides-wrapper {
   transform: translateX(0);
 }
@@ -336,7 +312,6 @@ input[name="tesla-slider"] {
   transform: translateX(-66.6666%);
 }
 
-/* 6. Background Images for the new slides */
 .model-3-bg {
   background: url(https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Promo-Model-3-Desktop-US-CA-MX.jpg)
     center/cover;
@@ -346,7 +321,6 @@ input[name="tesla-slider"] {
     center/cover;
 }
 
-/* 7. Styling the Arrows */
 .arrow {
   position: absolute;
   top: 50%;
@@ -365,7 +339,6 @@ input[name="tesla-slider"] {
   right: 20px;
 }
 
-/* 8. Styling the Dots */
 .dots-container {
   position: absolute;
   bottom: 30px;
@@ -381,9 +354,310 @@ input[name="tesla-slider"] {
   border-radius: 50%;
   cursor: pointer;
 }
-/* Highlight active dot */
+
 #slide-1:checked ~ .dots-container label[for="slide-1"],
 #slide-2:checked ~ .dots-container label[for="slide-2"],
 #slide-3:checked ~ .dots-container label[for="slide-3"] {
   background: white;
+}
+
+.tesla-cards-section {
+  width: 100%;
+  padding: 50px 0 48px 0;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.tesla-cards-section .cards-viewport {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.tesla-cards-section input[type="radio"] {
+  display: none;
+}
+
+.tesla-cards-section .cards-track {
+  display: flex;
+  gap: 20px;
+  padding-left: 48px;
+  padding-right: 48px;
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.tesla-cards-section .vehicle-box {
+  min-width: 983px;
+  height: 580px;
+  border-radius: 8px;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 32px 40px 40px 40px;
+  box-sizing: border-box;
+}
+
+.tesla-cards-section .box-1 {
+  background-image: url(https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Card-Model-3-Desktop-US_PR_MX.jpg);
+}
+.tesla-cards-section .box-2 {
+  background-image: url(https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Vehicle-Card-Model-Y-Desktop-US-Snow.jpg);
+}
+.tesla-cards-section .box-3 {
+  background-image: url(https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Card-Cybertruck-Desktop-US_PR_MX.jpg);
+}
+.tesla-cards-section .box-4 {
+  background-image: url(https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Card-Model-S-Desktop-US-v3.jpg);
+}
+.tesla-cards-section .box-5 {
+  background-image: url(https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Card-Model-X-Desktop-US_PR_MX.jpg);
+}
+
+.tesla-cards-section .category {
+  color: rgb(255, 255, 255);
+  font-family: Arial, sans-serif;
+  font-size: 17px;
+  font-weight: 500;
+
+  display: block;
+  margin-bottom: 5px;
+}
+
+.tesla-cards-section .content h1 {
+  color: rgb(255, 255, 255);
+  font-family: Arial, sans-serif;
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 56px;
+  margin: 0;
+}
+
+.tesla-cards-section .lease-link {
+  color: rgb(255, 255, 255);
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  display: inline-block;
+  margin-top: 5px;
+  margin-bottom: 25px;
+}
+
+.tesla-cards-section .btn-row {
+  display: flex;
+  gap: 8px;
+  width: 100%;
+}
+
+.tesla-cards-section button {
+  height: 40px;
+  width: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 4px;
+  border: 3px solid transparent;
+
+  /* Text & Interaction */
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.tesla-cards-section .b-primary {
+  background-color: rgb(62, 106, 225);
+  color: rgb(255, 255, 255);
+}
+
+.tesla-cards-section .b-secondary {
+  background-color: rgb(255, 255, 255);
+  color: black;
+}
+
+.tesla-cards-section .arrow-set {
+  display: none;
+}
+
+.tesla-cards-section .v-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 44px;
+  height: 44px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 18px;
+  color: #333;
+  z-index: 10;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+.tesla-cards-section .v-prev {
+  left: 20px;
+}
+.tesla-cards-section .v-next {
+  right: 20px;
+}
+
+.tesla-cards-section .v-dots {
+  position: relative;
+  margin-top: 24px;
+  width: 100%;
+  height: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  z-index: 5;
+}
+
+.tesla-cards-section .v-dot {
+  width: 8px;
+  height: 8px;
+  background: #d0d1d2;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.33s ease;
+  box-sizing: border-box;
+}
+
+#card-1:checked ~ .nav-arrows .set-1,
+#card-2:checked ~ .nav-arrows .set-2,
+#card-3:checked ~ .nav-arrows .set-3,
+#card-4:checked ~ .nav-arrows .set-4,
+#card-5:checked ~ .nav-arrows .set-5 {
+  display: block;
+}
+
+#card-1:checked ~ .v-dots #dot-1,
+#card-2:checked ~ .v-dots #dot-2,
+#card-3:checked ~ .v-dots #dot-3,
+#card-4:checked ~ .v-dots #dot-4,
+#card-5:checked ~ .v-dots #dot-5 {
+  background: #171a20;
+}
+
+#card-1:checked ~ .cards-track {
+  transform: translateX(0);
+}
+#card-2:checked ~ .cards-track {
+  transform: translateX(calc(-983px - 20px));
+}
+#card-3:checked ~ .cards-track {
+  transform: translateX(calc(-1966px - 40px));
+}
+#card-4:checked ~ .cards-track {
+  transform: translateX(calc(-2949px - 60px));
+}
+#card-5:checked ~ .cards-track {
+  transform: translateX(calc(-3932px - 80px));
+}
+
+!!!!!----2 PROMO CARD HORIZONTAL----!!!!! .tesla-grid-promo {
+  width: 100%;
+  padding: 0 48px 0px 48px;
+  background-color: #ffffff;
+  box-sizing: border-box;
+}
+
+.tesla-grid-promo .promo-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  gap: 24px;
+  justify-content: flex-start;
+}
+
+.tesla-grid-promo .promo-card {
+  flex: 0 0 572.5px;
+  height: 248px;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+
+  display: grid;
+  grid-template-columns: 190.828px 190.828px 190.828px;
+  grid-template-rows: 248px;
+
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.tesla-grid-promo .promo-text {
+  grid-column: 1 / span 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 48px;
+  padding-right: 24px;
+
+  width: 381.66px;
+  box-sizing: border-box;
+}
+
+.tesla-grid-promo .promo-text h2 {
+  font-family: Arial, sans-serif;
+  font-size: 34px;
+  font-weight: 500;
+  line-height: 44px;
+  color: rgb(23, 26, 32);
+  margin: 0 0 8px 0;
+}
+
+.tesla-grid-promo .promo-text p {
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  color: rgb(92, 94, 98);
+  margin: 0 0 0px 0;
+}
+
+.tesla-grid-promo .promo-btn {
+  margin-top: auto;
+  width: 252px;
+  height: 40px;
+  background-color: rgb(255, 255, 255);
+  color: rgb(57, 60, 65);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 6px;
+  box-shadow: 0 0 0 2px inset rgba(0, 0, 0, 0.05);
+}
+
+.tesla-grid-promo .promo-btn:hover {
+  background: #f4f4f4;
+}
+
+.tesla-grid-promo .promo-image {
+  grid-column: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 190.828px;
+}
+
+.tesla-grid-promo .promo-image img {
+  max-width: 270px;
+  max-height: 190px;
+  width: 190.82px;
+  height: auto;
+  object-fit: contain;
+  border-radius: 8px;
 }

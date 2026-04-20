@@ -127,25 +127,173 @@
         </div>
       </div>
 
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
+      <section class="tesla-cards-section">
+        <div class="cards-viewport">
+          <input type="radio" name="v-slide" id="card-1" checked />
+          <input type="radio" name="v-slide" id="card-2" />
+          <input type="radio" name="v-slide" id="card-3" />
+          <input type="radio" name="v-slide" id="card-4" />
+          <input type="radio" name="v-slide" id="card-5" />
 
-      <section class="slider-container">
-        <div class="hero-container">
-          <div class="title-container">
-            <h5 class="subtitle">Sport Sedan</h5>
+          <div class="cards-track">
+            <div class="vehicle-box box-1">
+              <span class="category">Sport Sedan</span>
+              <div class="content">
+                <h1>Model 3</h1>
+                <a
+                  href="https://www.tesla.com/model3/design?id=finplat.AUTO_LEASE:OPERATIONAL_LEASE:CT_PRIVATE#overview"
+                  class="lease-link"
+                  >Lease From $299/mo</a
+                >
+                <div class="btn-row">
+                  <a href="https://www.tesla.com/model3/design#overview"
+                    ><button class="b-primary">Order Now</button></a
+                  >
+                  <a href="https://www.tesla.com/model3"
+                    ><button class="b-secondary">Learn More</button></a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="vehicle-box box-2">
+              <span class="category">Midsize SUV</span>
+              <div class="content">
+                <h1>Model Y</h1>
+                <a
+                  href="https://www.tesla.com/modely/design?id=finplat.AUTO_LEASE%3AOPERATIONAL_LEASE%3ACT_PRIVATE#overview"
+                  class="lease-link"
+                  >Lease From $459/mo</a
+                >
+                <div class="btn-row">
+                  <a href="https://www.tesla.com/modely/design#overview"
+                    ><button class="b-primary">Order Now</button></a
+                  >
+                  <a href="https://www.tesla.com/modely#performance"
+                    ><button class="b-secondary">Learn More</button></a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="vehicle-box box-3">
+              <span class="category">Utility Truck</span>
+              <div class="content">
+                <h1>Cybertruck</h1>
+                <a
+                  href="https://www.tesla.com/cybertruck/design?id=finplat.AUTO_LEASE%3AOPERATIONAL_LEASE%3ACT_PRIVATE#overview"
+                  class="lease-link"
+                  >Lease From $849/mo</a
+                >
+                <div class="btn-row">
+                  <a href="https://www.tesla.com/cybertruck/design?#overview"
+                    ><button class="b-primary">Order Now</button></a
+                  >
+                  <a href="https://www.tesla.com/cybertruck"
+                    ><button class="b-secondary">Learn More</button></a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="vehicle-box box-4">
+              <span class="category">Luxury Sedan</span>
+              <div class="content">
+                <h1>Model S</h1>
+
+                <div class="btn-row">
+                  <a
+                    href="https://www.tesla.com/inventory/new/ms?arrangeby=plh&range=0"
+                    ><button class="b-primary">View Inventory</button></a
+                  >
+                  <a href="https://www.tesla.com/models"
+                    ><button class="b-secondary">Learn More</button></a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="vehicle-box box-5">
+              <span class="category">Luxury SUV</span>
+              <div class="content">
+                <h1>Model X</h1>
+
+                <div class="btn-row">
+                  <a
+                    href="https://www.tesla.com/inventory/new/mx?arrangeby=plh&range=0"
+                    ><button class="b-primary">View Inventory</button></a
+                  >
+                  <a href="https://www.tesla.com/modelx"
+                    ><button class="b-secondary">Learn More</button></a
+                  >
+                </div>
+              </div>
+            </div>
           </div>
 
-          <div class="content-box">
-            <h1 class="title">Model 3</h1>
-            <p class="pricing">Lease From $299/mo</p>
+          <div class="nav-arrows">
+            <div class="arrow-set set-1">
+              <label for="card-5" class="v-nav v-prev">&#10094;</label
+              ><label for="card-2" class="v-nav v-next">&#10095;</label>
+            </div>
+            <div class="arrow-set set-2">
+              <label for="card-1" class="v-nav v-prev">&#10094;</label
+              ><label for="card-3" class="v-nav v-next">&#10095;</label>
+            </div>
+            <div class="arrow-set set-3">
+              <label for="card-2" class="v-nav v-prev">&#10094;</label
+              ><label for="card-4" class="v-nav v-next">&#10095;</label>
+            </div>
+            <div class="arrow-set set-4">
+              <label for="card-3" class="v-nav v-prev">&#10094;</label
+              ><label for="card-5" class="v-nav v-next">&#10095;</label>
+            </div>
+            <div class="arrow-set set-5">
+              <label for="card-4" class="v-nav v-prev">&#10094;</label
+              ><label for="card-1" class="v-nav v-next">&#10095;</label>
+            </div>
+          </div>
 
-            <div class="button-group">
-              <button class="btn btn-blue">Order Now</button>
-              <button class="btn btn-white">Learn More</button>
+          <div class="v-dots">
+            <label for="card-1" class="v-dot" id="dot-1"></label>
+            <label for="card-2" class="v-dot" id="dot-2"></label>
+            <label for="card-3" class="v-dot" id="dot-3"></label>
+            <label for="card-4" class="v-dot" id="dot-4"></label>
+            <label for="card-5" class="v-dot" id="dot-5"></label>
+          </div>
+        </div>
+      </section>
+
+      <section class="tesla-grid-promo">
+        <div class="promo-container">
+          <div class="promo-card">
+            <div class="promo-text">
+              <h2>Current Offers</h2>
+              <p>Explore limited-time offers on Tesla vehicles.</p>
+              <a href="#" class="promo-btn">Learn More</a>
+            </div>
+            <div class="promo-image">
+              <img
+                src="https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Grid-Current-Offers.jpg"
+                alt="Tesla Lineup"
+              />
+            </div>
+          </div>
+
+          <div class="promo-card">
+            <div class="promo-text">
+              <h2>American Heroes</h2>
+              <p>
+                $500 off for military, first responders, healthcare, teachers
+                and students.
+              </p>
+              <a href="#" class="promo-btn">Learn More</a>
+            </div>
+            <div class="promo-image">
+              <img
+                src="https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Grid-American-Heroes-v2.jpg"
+                alt="American Heroes"
+              />
             </div>
           </div>
         </div>

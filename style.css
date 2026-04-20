@@ -1,9 +1,11 @@
-!!!!!----UNIVERSAL SELECTOR START----!!!!! * {
+/* !!!!!----UNIVERSAL SELECTOR START----!!!!! */
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-!!!!!----FONT STYLES----!!!!! @font-face {
+/* !!!!!----FONT STYLES----!!!!!  */
+@font-face {
   font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   src: url("https://digitalassets.tesla.com/tesla-design-system/raw/upload/static/fonts/universal-sans-2/web/text/Universal-Sans-Text-Bold.woff2")
     format("woff2");
@@ -14,7 +16,8 @@
 body {
   font-family: "Universal Sans", Arial, sans-serif;
 }
-!!!!!----STICK TOP NAVBAR----!!!!! header {
+/* !!!!!----STICK TOP NAVBAR----!!!!!  */
+header {
   position: sticky;
   top: 0;
   width: 100%;
@@ -28,7 +31,7 @@ body {
   justify-content: space-between;
   height: 56px;
   width: 100%;
-  padding: 0 32px;
+  padding: 0 48px;
 }
 
 .header-left,
@@ -92,7 +95,8 @@ body {
   height: 24px;
   width: 120px;
 }
-!!!!!----HORIZONTAL SLIDER SECTION----!!!!! .hero-section {
+/* !!!!!----HORIZONTAL SLIDER SECTION----!!!!!  */
+.hero-section {
   position: relative;
   height: 475px;
   width: 100%;
@@ -193,7 +197,8 @@ body {
   opacity: 0.8;
 }
 
-!!!!!----HORIZONATL CARD SLIDER----!!!!! .slider-container {
+/* !!!!!----HORIZONATL CARD SLIDER----!!!!!  */
+.slider-container {
   padding: 40px 24px;
   width: 100%;
   display: flex;
@@ -212,7 +217,7 @@ body {
   background-image: url(https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Card-Model-3-Desktop-US_PR_MX.jpg);
   background-size: cover;
   background-position: center;
-  border-radius: 16px;
+  border-radius: 8px;
   overflow: hidden;
   color: white;
   box-sizing: border-box;
@@ -561,7 +566,8 @@ input[name="tesla-slider"] {
   transform: translateX(calc(-3932px - 80px));
 }
 
-!!!!!----2 PROMO CARD HORIZONTAL----!!!!! .tesla-grid-promo {
+/* !!!!!----2 PROMO CARD HORIZONTAL----!!!!! */
+.tesla-grid-promo {
   width: 100%;
   padding: 0 48px 0px 48px;
   background-color: #ffffff;
@@ -569,11 +575,11 @@ input[name="tesla-slider"] {
 }
 
 .tesla-grid-promo .promo-container {
-  max-width: 1200px;
+  max-width: 1169px; /* Exact math: 572.5 + 572.5 + 24 gap */
   margin: 0 auto;
   display: flex;
   gap: 24px;
-  justify-content: flex-start;
+  justify-content: center; /* Changed from flex-start to center */
 }
 
 .tesla-grid-promo .promo-card {
@@ -660,4 +666,103 @@ input[name="tesla-slider"] {
   height: auto;
   object-fit: contain;
   border-radius: 8px;
+}
+
+/* --- TESLA FEATURES SECTION --- */
+.tesla-feature-section {
+  width: 100%;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 48px;
+  padding-right: 48px;
+  background-color: #fff;
+  box-sizing: border-box;
+  display: block;
+}
+
+.tesla-feature-section .feature-container {
+  display: grid;
+  grid-template-columns: 771px 1fr;
+  column-gap: 24px;
+  height: 580px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.tesla-feature-section .feature-card {
+  height: 580px;
+  border-radius: 8px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+.tesla-feature-section .travel-safer {
+  background-image: url("https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-FSD-Safety-Report-Split-Desktop.jpg");
+}
+
+.tesla-feature-section .standard-features {
+  background-image: url("https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Features-Desktop.png");
+}
+
+.tesla-feature-section .feature-content h1 {
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 48px;
+  margin: 0 0 4px 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+.tesla-feature-section .feature-content h4 {
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  margin: 0 0 24px 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+.tesla-feature-section .feature-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.tesla-feature-section .feature-buttons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 160px;
+  height: 47.5px;
+  border-radius: 4px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  border: 3px solid transparent;
+  box-sizing: border-box;
+  transition: background-color 0.33s ease;
+}
+
+.tesla-feature-section .btn-primary {
+  background-color: #3e6ae1;
+  color: #fff;
+}
+
+.tesla-feature-section .btn-secondary {
+  background-color: #fff;
+  color: #171a20;
+}
+/* --- BLANK SPACER SECTION --- */
+.tesla-spacer {
+  width: 100%;
+  padding: 40px 0;
+  background-color: #ffffff;
+  box-sizing: border-box;
 }

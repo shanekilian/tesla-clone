@@ -326,120 +326,148 @@
       <section class="tesla-spacer"></section>
 
       <section class="charging-section">
-        <div class="map-preview">
-          <img
-            src="./assets/map-view-of-super-charger.png"
-            alt="Tesla Charging Network Map"
-          />
-        </div>
-        <div class="charging-content">
-          <header class="charging-header">
-            <h2 class="charging-title">Find Your Charge</h2>
-            <p class="charging-subtitle">
-              View the network of Tesla Superchargers available near you.
-            </p>
-          </header>
-          <div class="charger-legend">
-            <div class="legend-item">
-              <div class="stat-box">
-                <span class="count-number">31,839</span>
-                <img
-                  src="./assets/charge-logo1.svg"
-                  alt="Supercharger Icon"
-                  class="icon-small"
-                />
-              </div>
-              <h4 class="legend-label">Superchargers</h4>
-            </div>
-            <div class="legend-item">
-              <div class="stat-box">
-                <span class="count-number">5,900</span>
-                <img
-                  src="./assets/destination-charging.svg"
-                  alt="Destination Icon"
-                  class="icon-small"
-                />
-              </div>
-              <h4 class="legend-label">Destination Chargers</h4>
-            </div>
+        <div class="tesla-container">
+          <div class="charging-map-image">
+            <img
+              src="./assets/map-view-of-super-charger.png"
+              alt="Tesla Charging Map"
+            />
           </div>
-          <div class="charging-actions">
-            <button class="btn-main">View Network</button>
-            <button class="btn-outline">Learn More</button>
+
+          <div class="charging-map-content">
+            <div class="charging-first-row">
+              <div class="charging-header">
+                <p class="charging-title">Find Your Charge</p>
+                <h4 class="charging-subtitle">
+                  View the network of Tesla Superchargers and Destination
+                  Chargers available near you.
+                </h4>
+              </div>
+
+              <div class="charging-legend">
+                <div class="charging-key">
+                  <div class="stat-row">
+                    <p class="stat-number">31,875</p>
+                    <img class="stat-icon" src="./assets/charge-logo1.svg" />
+                  </div>
+                  <h4 class="stat-label">Superchargers</h4>
+                </div>
+
+                <div class="charging-key">
+                  <div class="stat-row">
+                    <p class="stat-number">5,899</p>
+                    <img class="stat-icon" src="./assets/plug3.png" />
+                  </div>
+                  <h4 class="stat-label">Destination Chargers</h4>
+                </div>
+              </div>
+            </div>
+
+            <div class="charging-ctas">
+              <a href="#" class="btn-primary">View Network</a>
+              <a href="#" class="btn-secondary">Learn More</a>
+            </div>
           </div>
         </div>
       </section>
 
-      <section class="energy-carousel-container">
-        <div class="carousel-dots">
-          <a href="#energy-1" class="dot-link"></a>
-          <a href="#energy-2" class="dot-link"></a>
-          <a href="#energy-3" class="dot-link"></a>
-          <a href="#energy-4" class="dot-link"></a>
-        </div>
-        <div class="energy-slider">
-          <div class="energy-slide" id="energy-1">
-            <div class="slide-media">
-              <img
-                src="https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Card-Solar-Panels-Desktop-v2.jpg"
-                alt="Solar Panels"
-              />
+      <section class="tesla-product-section">
+        <div class="product-viewport">
+          <input type="radio" name="p-slide" id="prod-1" checked />
+          <input type="radio" name="p-slide" id="prod-2" />
+          <input type="radio" name="p-slide" id="prod-3" />
+          <input type="radio" name="p-slide" id="prod-4" />
+
+          <div class="product-track">
+            <div class="product-box p-box-1">
+              <div class="product-content">
+                <h1 class="product-title">Solar Panels</h1>
+                <p class="product-subtitle">Schedule a Virtual Consultation</p>
+                <div class="product-btn-row">
+                  <a href="#"
+                    ><button class="pb-btn pb-primary">Order Now</button></a
+                  >
+                  <a href="#"
+                    ><button class="pb-btn pb-secondary">Learn More</button></a
+                  >
+                </div>
+              </div>
             </div>
-            <div class="slide-overlay">
-              <h1>Solar Panels</h1>
-              <h4>Power Your Home and Reduce Your Electricity Bill</h4>
-              <div class="slide-actions">
-                <button class="btn-dark">Order Now</button>
-                <button class="btn-light">Learn More</button>
+
+            <div class="product-box p-box-2">
+              <div class="product-content">
+                <h1 class="product-title">Solar Roof</h1>
+                <p class="product-subtitle">
+                  Produce Clean Energy From Your Roof
+                </p>
+                <div class="product-btn-row">
+                  <a href="#"
+                    ><button class="pb-btn pb-primary">Order Now</button></a
+                  >
+                  <a href="#"
+                    ><button class="pb-btn pb-secondary">Learn More</button></a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="product-box p-box-3">
+              <div class="product-content">
+                <h1 class="product-title">Powerwall</h1>
+                <p class="product-subtitle">Store Energy for Your Home</p>
+                <div class="product-btn-row">
+                  <a href="#"
+                    ><button class="pb-btn pb-primary">Order Now</button></a
+                  >
+                  <a href="#"
+                    ><button class="pb-btn pb-secondary">Learn More</button></a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="product-box p-box-4">
+              <div class="product-content">
+                <h1 class="product-title">Megapack</h1>
+                <p class="product-subtitle">
+                  Scalable Energy Storage for Businesses
+                </p>
+                <div class="product-btn-row">
+                  <a href="#"
+                    ><button class="pb-btn pb-primary">Order Now</button></a
+                  >
+                  <a href="#"
+                    ><button class="pb-btn pb-secondary">Learn More</button></a
+                  >
+                </div>
               </div>
             </div>
           </div>
-          <div class="energy-slide" id="energy-2">
-            <div class="slide-media">
-              <img
-                src="https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Card-Powerwall-Desktop.png"
-                alt="Powerwall"
-              />
+
+          <div class="p-nav-arrows">
+            <div class="p-arrow-set p-set-1">
+              <label for="prod-4" class="p-nav p-prev">&#10094;</label>
+              <label for="prod-2" class="p-nav p-next">&#10095;</label>
             </div>
-            <div class="slide-overlay">
-              <h1>Powerwall</h1>
-              <h4>Keep Your Lights On During Outages</h4>
-              <div class="slide-actions">
-                <button class="btn-dark">Order Now</button>
-                <button class="btn-light">Learn More</button>
-              </div>
+            <div class="p-arrow-set p-set-2">
+              <label for="prod-1" class="p-nav p-prev">&#10094;</label>
+              <label for="prod-3" class="p-nav p-next">&#10095;</label>
             </div>
-          </div>
-          <div class="energy-slide" id="energy-3">
-            <div class="slide-media">
-              <img
-                src="https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Card-Megapack-Desktop-v2.jpg"
-                alt="Megapack"
-              />
+            <div class="p-arrow-set p-set-3">
+              <label for="prod-2" class="p-nav p-prev">&#10094;</label>
+              <label for="prod-4" class="p-nav p-next">&#10095;</label>
             </div>
-            <div class="slide-overlay">
-              <h1>Megapack</h1>
-              <h4>Massive Batteries for Massive Energy Support</h4>
-              <div class="slide-actions">
-                <button class="btn-light">Learn More</button>
-              </div>
+            <div class="p-arrow-set p-set-4">
+              <label for="prod-3" class="p-nav p-prev">&#10094;</label>
+              <label for="prod-1" class="p-nav p-next">&#10095;</label>
             </div>
           </div>
-          <div class="energy-slide" id="energy-4">
-            <div class="slide-media">
-              <img
-                src="https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Card-Solar-Roof-Desktop-v2.jpg"
-                alt="Solar Roof"
-              />
-            </div>
-            <div class="slide-overlay">
-              <h1>Solar Roof</h1>
-              <h4>Generate Clean Energy With Your Roof</h4>
-              <div class="slide-actions">
-                <button class="btn-dark">Order Now</button>
-                <button class="btn-light">Learn More</button>
-              </div>
-            </div>
+
+          <div class="p-dots">
+            <label for="prod-1" class="p-dot" id="p-dot-1"></label>
+            <label for="prod-2" class="p-dot" id="p-dot-2"></label>
+            <label for="prod-3" class="p-dot" id="p-dot-3"></label>
+            <label for="prod-4" class="p-dot" id="p-dot-4"></label>
           </div>
         </div>
       </section>

@@ -766,3 +766,302 @@ input[name="tesla-slider"] {
   background-color: #ffffff;
   box-sizing: border-box;
 }
+
+/* TESLA PRODUCT SLIDER SECTION */
+.charging-section {
+  width: 100%;
+  background-color: #ffffff;
+  box-sizing: border-box;
+}
+
+.charging-section .tesla-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+/* THE MAP IMAGE */
+.charging-map-image {
+  width: calc(100% - 96px);
+  margin: 0 auto;
+  height: 450px;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.charging-map-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* THE CONTENT BOX (This uses your inspected styles) */
+.charging-map-content {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 48px;
+  row-gap: 32px;
+  box-sizing: border-box;
+}
+
+/* THE TOP ROW (Text & Stats) */
+.charging-first-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.charging-header {
+  width: 633.961px;
+}
+
+/* TYPOGRAPHY */
+.charging-title,
+.stat-number {
+  color: rgb(23, 26, 32);
+  font-family: Arial, sans-serif;
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 56px;
+  margin: 0;
+}
+
+.charging-subtitle,
+.stat-label {
+  color: rgb(92, 94, 98);
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 28px;
+  margin: 8px 0 0 0;
+}
+
+/* STATS ALIGNMENT */
+.charging-legend {
+  display: flex;
+  gap: 40px;
+}
+
+.stat-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.stat-icon {
+  width: 40px;
+  height: 40px;
+}
+
+/* BUTTONS */
+.charging-ctas {
+  display: flex;
+  gap: 16px;
+}
+
+.charging-ctas a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  padding: 0 24px;
+  border-radius: 4px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: opacity 0.3s;
+}
+
+.btn-primary {
+  background-color: rgb(23, 26, 32);
+  color: #fff;
+}
+
+.btn-secondary {
+  background-color: rgb(244, 244, 244);
+  color: rgb(23, 26, 32);
+}
+
+/* --- FULLY ISOLATED PRODUCT SLIDER --- */
+/* This section is completely scoped to avoid affecting other margins/paddings */
+
+.tesla-product-section {
+  width: 100%;
+  padding: 50px 0 48px 0;
+  background-color: #fff;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.tesla-product-section .product-viewport {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+/* Strictly hide radio buttons for this section only */
+.tesla-product-section input[type="radio"][name="p-slide"] {
+  display: none !important;
+}
+
+.tesla-product-section .product-track {
+  display: flex;
+  gap: 20px;
+  padding-left: 48px;
+  padding-right: 48px;
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.tesla-product-section .product-box {
+  min-width: 983px;
+  height: 580px;
+  border-radius: 8px;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+/* Background Images specifically assigned to product box classes */
+.tesla-product-section .p-box-1 {
+  background-image: url(https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Card-Solar-Panels-Desktop-v2.jpg);
+}
+.tesla-product-section .p-box-2 {
+  background-image: url(https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Card-Solar-Roof-Desktop-v2.jpg);
+}
+.tesla-product-section .p-box-3 {
+  background-image: url(https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Card-Powerwall-Desktop.png);
+}
+.tesla-product-section .p-box-4 {
+  background-image: url(https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Card-Megapack-Desktop-v2.jpg);
+}
+
+.tesla-product-section .product-title {
+  color: #fff;
+  font-family: Arial, sans-serif;
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 56px;
+  margin: 0;
+}
+
+.tesla-product-section .product-subtitle {
+  color: #fff;
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  margin: 5px 0 25px 0;
+  line-height: 28px;
+}
+
+.tesla-product-section .product-btn-row {
+  display: flex;
+  gap: 8px;
+}
+
+/* Buttons are scoped using .pb-btn to prevent global button style bleed */
+.tesla-product-section .pb-btn {
+  height: 40px;
+  width: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  border: none;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  outline: none;
+}
+
+.tesla-product-section .pb-primary {
+  background-color: #3e6ae1;
+  color: #fff;
+}
+
+.tesla-product-section .pb-secondary {
+  background-color: #fff;
+  color: #000;
+}
+
+/* Scoped Navigation Arrows */
+.tesla-product-section .p-arrow-set {
+  display: none;
+}
+
+.tesla-product-section .p-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 44px;
+  height: 44px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+  font-size: 18px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tesla-product-section .p-prev {
+  left: 20px;
+}
+.tesla-product-section .p-next {
+  right: 20px;
+}
+
+/* Scoped Dots Navigation */
+.tesla-product-section .p-dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 24px;
+}
+
+.tesla-product-section .p-dot {
+  width: 8px;
+  height: 8px;
+  background: #d0d1d2;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+/* --- Radio Logic Isolation --- */
+#prod-1:checked ~ .p-nav-arrows .p-set-1,
+#prod-2:checked ~ .p-nav-arrows .p-set-2,
+#prod-3:checked ~ .p-nav-arrows .p-set-3,
+#prod-4:checked ~ .p-nav-arrows .p-set-4 {
+  display: block;
+}
+
+#prod-1:checked ~ .p-dots #p-dot-1,
+#prod-2:checked ~ .p-dots #p-dot-2,
+#prod-3:checked ~ .p-dots #p-dot-3,
+#prod-4:checked ~ .p-dots #p-dot-4 {
+  background: #171a20;
+}
+
+#prod-1:checked ~ .product-track {
+  transform: translateX(0);
+}
+#prod-2:checked ~ .product-track {
+  transform: translateX(calc(-983px - 20px));
+}
+#prod-3:checked ~ .product-track {
+  transform: translateX(calc(-1966px - 40px));
+}
+#prod-4:checked ~ .product-track {
+  transform: translateX(calc(-2949px - 60px));
+}

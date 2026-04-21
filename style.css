@@ -4,18 +4,11 @@
   padding: 0;
   box-sizing: border-box;
 }
-/* !!!!!----FONT STYLES----!!!!!  */
-@font-face {
-  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  src: url("https://digitalassets.tesla.com/tesla-design-system/raw/upload/static/fonts/universal-sans-2/web/text/Universal-Sans-Text-Bold.woff2")
-    format("woff2");
-  font-weight: 700;
-  font-style: normal;
-}
 
 body {
   font-family: "Universal Sans", Arial, sans-serif;
 }
+
 /* !!!!!----STICK TOP NAVBAR----!!!!!  */
 header {
   position: sticky;
@@ -53,7 +46,7 @@ header {
 
 .tesla-logo {
   height: 24px;
-  width: auto;
+  width: 120px;
   cursor: pointer;
 }
 
@@ -91,27 +84,7 @@ header {
   background-color: rgba(0, 0, 0, 0.05);
 }
 
-.tesla-logo {
-  height: 24px;
-  width: 120px;
-}
 /* !!!!!----HORIZONTAL SLIDER SECTION----!!!!!  */
-.hero-section {
-  position: relative;
-  height: 475px;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  justify-content: center;
-  padding: 0;
-  box-sizing: border-box;
-  overflow: hidden;
-  color: white;
-  text-align: center;
-}
-
 .video-container {
   position: absolute;
   top: 0;
@@ -139,7 +112,7 @@ header {
 
 .headings h1 {
   font-size: 48px;
-  font-weight: 500px;
+  font-weight: 500;
   margin: 0;
   color: rgb(255, 255, 255);
   height: 56px;
@@ -191,92 +164,6 @@ header {
 .btn-secondary {
   background-color: rgb(255, 255, 255);
   color: rgb(57, 60, 65);
-}
-
-.hero-section button:hover {
-  opacity: 0.8;
-}
-
-/* !!!!!----HORIZONATL CARD SLIDER----!!!!!  */
-.slider-container {
-  padding: 40px 24px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-
-.hero-container {
-  display: grid;
-  grid-template-rows: auto 1fr auto;
-
-  width: 100%;
-  max-width: 983px;
-  height: 580px;
-  margin: 0 auto;
-
-  background-image: url(https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Card-Model-3-Desktop-US_PR_MX.jpg);
-  background-size: cover;
-  background-position: center;
-  border-radius: 8px;
-  overflow: hidden;
-  color: white;
-  box-sizing: border-box;
-}
-
-.title-container {
-  padding: 32px 40px;
-}
-
-.content-box {
-  padding: 40px;
-  align-self: end;
-  text-align: left;
-}
-
-.subtitle {
-  font-size: 17px;
-  font-weight: 500;
-  margin: 0;
-  text-transform: none;
-}
-
-.title h1 {
-  font-size: 48px;
-  font-weight: 600;
-  margin: 0;
-  width: 171.42;
-}
-
-.pricing {
-  font-size: 16px;
-  text-decoration: underline;
-  margin-top: 8px;
-  margin-bottom: 24px;
-}
-
-.hero-container .button-group {
-  display: flex;
-  gap: 16px;
-}
-
-.btn {
-  width: 160px;
-  padding: 12px;
-  border-radius: 4px;
-  font-size: 14px;
-  font-weight: 500;
-  border: none;
-  cursor: pointer;
-}
-
-.btn-blue {
-  background-color: #3e6ae1;
-  color: white;
-}
-
-.btn-white {
-  background-color: white;
-  color: #171a20;
 }
 
 .slider-outer-wrapper {
@@ -366,6 +253,7 @@ input[name="tesla-slider"] {
   background: white;
 }
 
+/* !!!!!----VEHICLE CARD SLIDER----!!!!! */
 .tesla-cards-section {
   width: 100%;
   padding: 50px 0 48px 0;
@@ -427,7 +315,6 @@ input[name="tesla-slider"] {
   font-family: Arial, sans-serif;
   font-size: 17px;
   font-weight: 500;
-
   display: block;
   margin-bottom: 5px;
 }
@@ -443,12 +330,22 @@ input[name="tesla-slider"] {
 
 .tesla-cards-section .lease-link {
   color: rgb(255, 255, 255);
-  font-family: Arial, sans-serif;
+  font-family:
+    "Universal Sans Display",
+    -apple-system,
+    Arial,
+    sans-serif;
   font-size: 20px;
   font-weight: 400;
-  display: inline-block;
+  line-height: 28px;
+  display: inline;
+  position: relative;
+  box-shadow: rgb(255, 255, 255) 0px 2px 0px -1px;
   margin-top: 5px;
   margin-bottom: 25px;
+  text-decoration: none;
+  background-color: transparent;
+  cursor: pointer;
 }
 
 .tesla-cards-section .btn-row {
@@ -467,7 +364,6 @@ input[name="tesla-slider"] {
   border-radius: 4px;
   border: 3px solid transparent;
 
-  /* Text & Interaction */
   font-family: Arial, sans-serif;
   font-size: 14px;
   font-weight: 500;
@@ -477,11 +373,13 @@ input[name="tesla-slider"] {
 .tesla-cards-section .b-primary {
   background-color: rgb(62, 106, 225);
   color: rgb(255, 255, 255);
+  text-decoration: none;
 }
 
 .tesla-cards-section .b-secondary {
   background-color: rgb(255, 255, 255);
   color: black;
+  text-decoration: none;
 }
 
 .tesla-cards-section .arrow-set {
@@ -492,10 +390,10 @@ input[name="tesla-slider"] {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  width: 44px;
-  height: 44px;
+  width: 40px;
+  height: 40px;
   background: rgba(255, 255, 255, 0.9);
-  border-radius: 50%;
+  border-radius: 4px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -504,6 +402,7 @@ input[name="tesla-slider"] {
   color: #333;
   z-index: 10;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s ease;
 }
 .tesla-cards-section .v-prev {
   left: 20px;
@@ -575,11 +474,11 @@ input[name="tesla-slider"] {
 }
 
 .tesla-grid-promo .promo-container {
-  max-width: 1169px; /* Exact math: 572.5 + 572.5 + 24 gap */
+  max-width: 1169px;
   margin: 0 auto;
   display: flex;
   gap: 24px;
-  justify-content: center; /* Changed from flex-start to center */
+  justify-content: center;
 }
 
 .tesla-grid-promo .promo-card {
@@ -668,7 +567,7 @@ input[name="tesla-slider"] {
   border-radius: 8px;
 }
 
-/* --- TESLA FEATURES SECTION --- */
+/*!!!!! --- TESLA FEATURES SECTION !!!!!--- */
 .tesla-feature-section {
   width: 100%;
   padding-top: 32px;
@@ -759,7 +658,8 @@ input[name="tesla-slider"] {
   background-color: #fff;
   color: #171a20;
 }
-/* --- BLANK SPACER SECTION --- */
+
+/* !!!!!!!--- BLANK SPACER SECTION ---!!!!!!! */
 .tesla-spacer {
   width: 100%;
   padding: 40px 0;
@@ -767,7 +667,7 @@ input[name="tesla-slider"] {
   box-sizing: border-box;
 }
 
-/* TESLA PRODUCT SLIDER SECTION */
+/* !!!!!!--- CHARGING SECTION --- !!!!!!*/
 .charging-section {
   width: 100%;
   background-color: #ffffff;
@@ -781,7 +681,6 @@ input[name="tesla-slider"] {
   flex-direction: column;
 }
 
-/* THE MAP IMAGE */
 .charging-map-image {
   width: calc(100% - 96px);
   margin: 0 auto;
@@ -796,7 +695,6 @@ input[name="tesla-slider"] {
   object-fit: cover;
 }
 
-/* THE CONTENT BOX (This uses your inspected styles) */
 .charging-map-content {
   display: flex;
   flex-direction: column;
@@ -805,7 +703,6 @@ input[name="tesla-slider"] {
   box-sizing: border-box;
 }
 
-/* THE TOP ROW (Text & Stats) */
 .charging-first-row {
   display: flex;
   justify-content: space-between;
@@ -816,7 +713,6 @@ input[name="tesla-slider"] {
   width: 633.961px;
 }
 
-/* TYPOGRAPHY */
 .charging-title,
 .stat-number {
   color: rgb(23, 26, 32);
@@ -837,7 +733,7 @@ input[name="tesla-slider"] {
   margin: 8px 0 0 0;
 }
 
-/* STATS ALIGNMENT */
+/* !!!!!!! --- STATS ALIGNMENT --- !!!!!!!*/
 .charging-legend {
   display: flex;
   gap: 40px;
@@ -854,7 +750,7 @@ input[name="tesla-slider"] {
   height: 40px;
 }
 
-/* BUTTONS */
+/*!!!!!! --- BUTTONS --- !!!!!!*/
 .charging-ctas {
   display: flex;
   gap: 16px;
@@ -874,19 +770,7 @@ input[name="tesla-slider"] {
   transition: opacity 0.3s;
 }
 
-.btn-primary {
-  background-color: rgb(23, 26, 32);
-  color: #fff;
-}
-
-.btn-secondary {
-  background-color: rgb(244, 244, 244);
-  color: rgb(23, 26, 32);
-}
-
-/* --- FULLY ISOLATED PRODUCT SLIDER --- */
-/* This section is completely scoped to avoid affecting other margins/paddings */
-
+/* !!!!!!--- FULLY ISOLATED PRODUCT SLIDER --- !!!!!!!*/
 .tesla-product-section {
   width: 100%;
   padding: 50px 0 48px 0;
@@ -902,7 +786,6 @@ input[name="tesla-slider"] {
   overflow: hidden;
 }
 
-/* Strictly hide radio buttons for this section only */
 .tesla-product-section input[type="radio"][name="p-slide"] {
   display: none !important;
 }
@@ -929,18 +812,17 @@ input[name="tesla-slider"] {
   box-sizing: border-box;
 }
 
-/* Background Images specifically assigned to product box classes */
 .tesla-product-section .p-box-1 {
   background-image: url(https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Card-Solar-Panels-Desktop-v2.jpg);
 }
 .tesla-product-section .p-box-2 {
-  background-image: url(https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Card-Solar-Roof-Desktop-v2.jpg);
-}
-.tesla-product-section .p-box-3 {
   background-image: url(https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Card-Powerwall-Desktop.png);
 }
-.tesla-product-section .p-box-4 {
+.tesla-product-section .p-box-3 {
   background-image: url(https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Card-Megapack-Desktop-v2.jpg);
+}
+.tesla-product-section .p-box-4 {
+  background-image: url(https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Card-Solar-Roof-Desktop-v2.jpg);
 }
 
 .tesla-product-section .product-title {
@@ -966,7 +848,6 @@ input[name="tesla-slider"] {
   gap: 8px;
 }
 
-/* Buttons are scoped using .pb-btn to prevent global button style bleed */
 .tesla-product-section .pb-btn {
   height: 40px;
   width: 160px;
@@ -992,7 +873,6 @@ input[name="tesla-slider"] {
   color: #000;
 }
 
-/* Scoped Navigation Arrows */
 .tesla-product-section .p-arrow-set {
   display: none;
 }
@@ -1001,17 +881,19 @@ input[name="tesla-slider"] {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  width: 44px;
-  height: 44px;
+  width: 40px;
+  height: 40px;
   background: rgba(255, 255, 255, 0.9);
-  border-radius: 50%;
+  border-radius: 8px;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  z-index: 10;
   font-size: 18px;
+  color: #333;
+  z-index: 10;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s ease;
 }
 
 .tesla-product-section .p-prev {
@@ -1021,7 +903,6 @@ input[name="tesla-slider"] {
   right: 20px;
 }
 
-/* Scoped Dots Navigation */
 .tesla-product-section .p-dots {
   display: flex;
   justify-content: center;
@@ -1038,7 +919,7 @@ input[name="tesla-slider"] {
   transition: background 0.3s ease;
 }
 
-/* --- Radio Logic Isolation --- */
+/* !!!!!!!--- Radio Logic Isolation --- !!!!!!!*/
 #prod-1:checked ~ .p-nav-arrows .p-set-1,
 #prod-2:checked ~ .p-nav-arrows .p-set-2,
 #prod-3:checked ~ .p-nav-arrows .p-set-3,
@@ -1064,4 +945,203 @@ input[name="tesla-slider"] {
 }
 #prod-4:checked ~ .product-track {
   transform: translateX(calc(-2949px - 60px));
+}
+
+/*!!!!!!! --- FOOTNOTE / DISCLAIMER STYLES --- !!!!!!*/
+.tdis-layout-wrapper {
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.tdis-container {
+  max-width: 1280px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  padding-left: 48px;
+  padding-right: 48px;
+  box-sizing: border-box;
+}
+
+.tdis-content {
+  padding-top: 40px;
+  padding-bottom: 24px;
+  width: 100%;
+  max-width: 982px;
+}
+
+.tdis-text {
+  color: rgb(92, 94, 98);
+  font-family:
+    "Universal Sans Text",
+    -apple-system,
+    Arial,
+    sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  margin: 0;
+  padding-bottom: 14px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+.tdis-text sup {
+  font-size: 10px;
+  top: -0.2em;
+  margin-right: 2px;
+}
+
+/* !!!!!!--- FOOTER NAVIGATION --- !!!!!!*/
+.site-footer-nav {
+  width: 100%;
+  padding: 24px 0 48px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 80px;
+}
+
+.footer-link-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 14px;
+}
+
+.footer-link-item a {
+  text-decoration: none;
+  font-family:
+    "Universal Sans Text",
+    -apple-system,
+    Arial,
+    sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #5c5e62;
+  transition: color 0.33s ease;
+}
+
+.footer-link-item a:hover {
+  color: #171a20;
+}
+
+/* !!!!!!--- STICKY BAR STYLES --- !!!!!!*/
+.tcl-sticky-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px -2px 8px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10000;
+  box-sizing: border-box;
+  padding: 10px 24px;
+}
+
+.sticky-bar-content {
+  max-width: 1265px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  column-gap: 16px;
+}
+
+.sticky-btn {
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 24px;
+  border-radius: 4px;
+  border: 1px solid rgb(208, 209, 210);
+  font-family:
+    "Universal Sans Text",
+    -apple-system,
+    Arial,
+    sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: rgb(57, 60, 65);
+  cursor: pointer;
+  transition: background-color 0.33s ease;
+  text-decoration: none;
+}
+
+.chat-btn {
+  background-color: rgba(0, 0, 0, 0.05);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  width: 246px;
+}
+
+.drive-btn {
+  background-color: rgb(244, 244, 244);
+  width: 237px;
+}
+
+.sticky-icon {
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
+  color: rgb(92, 94, 98);
+}
+
+.steering-img {
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
+  display: block;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.sticky-btn:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* !!!!!!--- RESPONSIVE LOGIC --- !!!!!!!*/
+@media (max-width: 768px) {
+  .hide-mobile {
+    display: none;
+  }
+
+  .footer-link-list {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .sticky-text {
+    font-size: 12px;
+  }
+
+  .chat-btn,
+  .drive-btn {
+    width: auto;
+    padding: 4px 12px;
+  }
+}
+
+a,
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none !important;
+}
+
+a button,
+button a {
+  text-decoration: none !important;
 }
